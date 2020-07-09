@@ -35,10 +35,11 @@
 <link href="../css/app.css" rel="stylesheet"></head>
 
 <body>
+  <a href="#main" class="skip text-center type-source-semibold breath text-uppercase small">Skip to content</a>
   <main>
     <div class="bg-home gutter-medium">
       <div class="container">
-        <div class="media pt-small pos-rel">
+        <div class="media pt-small pos-rel d-print-none">
           <div class="media-body"></div>
           <form method="post">
             <p class="form-compact flush">
@@ -52,7 +53,7 @@
                   <option value="MXN">MXN</option>
                   <option value="USD">USD</option>
                 </select>
-                <button title="Change Currency" aria-label="Change Currency" class="icon-x-small btn btn-clear" data-js="hidden">
+                <button title="Change Currency" aria-label="Change Currency" class="icon-x-small btn btn-clear kb-focus" data-js="hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                     <path d="M50.003-.148l-8.855 8.84L76.1 43.775H0v12.286h76.1l-34.942 35.09L50.003 100l50.078-50.078z" fill="#273583"></path>
                   </svg>
@@ -62,13 +63,13 @@
             </p>
           </form>
           <nav aria-label="Country selector" class="country-selector">
-            <span class="tooltip tooltip-left" data-js="tooltip">
+            <div class="tooltip tooltip-left" data-js="tooltip">
               <input type="checkbox" name="country-selector" id="country-selector" class="sr-only">
               <label for="country-selector" class="country-selector__label">
                 <span class="fflag ff-md fflag-GB"></span>
                 <span class="sr-only">United Kingdom</span>
               </label>
-              <span class="details details-wide small shadow-light radius-medium text-left">
+              <div class="details details-wide details-block small shadow-light radius-medium text-left">
                 <div class="row list-flat">
                   <p class="col-6"><a href="https://phenq.fr" lang="fr-FR"><span class="fflag ff-md fflag-FR"></span> &nbsp; Français</a></p>
                   <p class="col-6"><a href="https://phenq.de" lang="de-DE"><span class="fflag ff-md fflag-DE"></span> &nbsp; Deutsch</a></p>
@@ -85,8 +86,8 @@
                   <p class="col-6"><a href="https://phenq.pl" lang="pl-PL"><span class="fflag ff-md fflag-PL"></span> &nbsp; Polski</a></p>
                   <p class="col-6"><a href="https://phenq.mx" lang="es-MX"><span class="fflag ff-md fflag-MX"></span> &nbsp; Español (MX)</a></p>
                 </div>
-              </span>
-            </span>
+              </div>
+            </div>
           </nav>
         </div>
         <div class="media logo-nav">
@@ -120,7 +121,7 @@
           </nav>
         </div>
         <!-- Heading and intro copy -->
-        <header class="gutter-large bghome__header" aria-label="Burn Stored Fat, Reveal Your Dream Body">
+        <header class="gutter-large bghome__header" aria-label="Burn Stored Fat, Reveal Your Dream Body" id="main">
           <div class="row">
             <h1 class="col-10 col-sm-9">Burn Stored Fat,<br><em>Reveal Your Dream Body</em></h1>
           </div>
@@ -765,8 +766,8 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq1" class="sr-only">
-              <label for="faq1" class="row" data-js="label-toggle">
-                <span class="h5 col-10" itemprop="text">Will PhenQ work for me?</span>
+              <label for="faq1" class="row h5" data-js="label-toggle">
+                <span class="col-10" itemprop="text">Will PhenQ work for me?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
                 </span>
@@ -780,8 +781,8 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq2" class="sr-only">
-              <label for="faq2" class="row" data-js="label-toggle">
-                <span class="h5 col-10" itemprop="text">How long will one bottle last me?</span>
+              <label for="faq2" class="row h5" data-js="label-toggle">
+                <span class="col-10" itemprop="text">How long will one bottle last me?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
                 </span>
@@ -795,8 +796,8 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq3" class="sr-only">
-              <label for="faq3" class="row" data-js="label-toggle">
-                <span class="h5 col-10" itemprop="text">How much should I order to get the best results?</span>
+              <label for="faq3" class="row h5" data-js="label-toggle">
+                <span class="col-10" itemprop="text">How much should I order to get the best results?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
                 </span>
@@ -811,8 +812,8 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq4" class="sr-only">
-              <label for="faq4" class="row" data-js="label-toggle">
-                <span class="h5 col-10" itemprop="text">How long can I take PhenQ for?</span>
+              <label for="faq4" class="row h5" data-js="label-toggle">
+                <span class="col-10" itemprop="text">How long can I take PhenQ for?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
                 </span>
@@ -826,8 +827,8 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq5" class="sr-only">
-              <label for="faq5" class="row" data-js="label-toggle">
-                <span class="h5 col-10" itemprop="text">What's in PhenQ?</span>
+              <label for="faq5" class="row h5" data-js="label-toggle">
+                <span class="col-10" itemprop="text">What's in PhenQ?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
                 </span>
@@ -842,8 +843,8 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq6" class="sr-only">
-              <label for="faq6" class="row" data-js="label-toggle">
-                <span class="h5 col-10" itemprop="text">How do I take PhenQ?</span>
+              <label for="faq6" class="row h5" data-js="label-toggle">
+                <span class="col-10" itemprop="text">How do I take PhenQ?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
                 </span>
@@ -857,8 +858,8 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq7" class="sr-only">
-              <label for="faq7" class="row" data-js="label-toggle">
-                <span class="h5 col-10" itemprop="text">Is PhenQ suitable for both men and women?</span>
+              <label for="faq7" class="row h5" data-js="label-toggle">
+                <span class="col-10" itemprop="text">Is PhenQ suitable for both men and women?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
                 </span>
@@ -872,8 +873,8 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq8" class="sr-only">
-              <label for="faq8" class="row" data-js="label-toggle">
-                <span class="h5 col-10" itemprop="text">Can PhenQ be taken by vegetarians and vegans?</span>
+              <label for="faq8" class="row h5" data-js="label-toggle">
+                <span class="col-10" itemprop="text">Can PhenQ be taken by vegetarians and vegans?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
                 </span>
@@ -887,8 +888,8 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq9" class="sr-only">
-              <label for="faq9" class="row" data-js="label-toggle">
-                <span class="h5 col-10" itemprop="text">Who should not take PhenQ?</span>
+              <label for="faq9" class="row h5" data-js="label-toggle">
+                <span class="col-10" itemprop="text">Who should not take PhenQ?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
                 </span>
@@ -902,8 +903,8 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq10" class="sr-only">
-              <label for="faq10" class="row" data-js="label-toggle">
-                <span class="h5 col-10" itemprop="text">Does PhenQ have any side effects?</span>
+              <label for="faq10" class="row h5" data-js="label-toggle">
+                <span class="col-10" itemprop="text">Does PhenQ have any side effects?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
                 </span>
@@ -917,8 +918,8 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq11" class="sr-only">
-              <label for="faq11" class="row" data-js="label-toggle">
-                <span class="h5 col-10" itemprop="text">Does PhenQ interact with any medicines?</span>
+              <label for="faq11" class="row h5" data-js="label-toggle">
+                <span class="col-10" itemprop="text">Does PhenQ interact with any medicines?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
                 </span>
@@ -932,8 +933,8 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq12" class="sr-only">
-              <label for="faq12" class="row" data-js="label-toggle">
-                <span class="h5 col-10" itemprop="text">Does PhenQ interfere with oral contraceptives?</span>
+              <label for="faq12" class="row h5" data-js="label-toggle">
+                <span class="col-10" itemprop="text">Does PhenQ interfere with oral contraceptives?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
                 </span>
@@ -947,8 +948,8 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq13" class="sr-only">
-              <label for="faq13" class="row" data-js="label-toggle">
-                <span class="h5 col-10" itemprop="text">Where do you ship to?</span>
+              <label for="faq13" class="row h5" data-js="label-toggle">
+                <span class="col-10" itemprop="text">Where do you ship to?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
                 </span>
@@ -962,8 +963,8 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq14" class="sr-only">
-              <label for="faq14" class="row" data-js="label-toggle">
-                <span class="h5 col-10" itemprop="text">Which payment methods do you offer?</span>
+              <label for="faq14" class="row h5" data-js="label-toggle">
+                <span class="col-10" itemprop="text">Which payment methods do you offer?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
                 </span>
@@ -997,8 +998,8 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq15" class="sr-only">
-              <label for="faq15" class="row" data-js="label-toggle">
-                <span class="h5 col-10" itemprop="text">How do I contact you?</span>
+              <label for="faq15" class="row h5" data-js="label-toggle">
+                <span class="col-10" itemprop="text">How do I contact you?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
                 </span>

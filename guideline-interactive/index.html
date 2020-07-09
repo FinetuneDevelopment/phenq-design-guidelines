@@ -36,6 +36,7 @@
 <link href="../css/app.css" rel="stylesheet"></head>
 
 <body>
+  <a href="#main" class="skip text-center type-source-semibold breath text-uppercase small">Skip to content</a>
   <main class="container">
     <h1>Digital style guide</h1>
     <nav class="tab-set">
@@ -69,7 +70,7 @@
         </ul>
       </nav>
 
-      <section role="tabpanel" aria-labelledby="click-tab1" id="pane1" tabindex="0">
+      <section role="tabpanel" aria-labelledby="click-tab1" id="pane1" tabindex="0" id="main">
         <div class="row">
           <div class="col-lg-6 col-sm-8">
             <h3>Styling</h3>
@@ -82,10 +83,10 @@
         <div class="row">
           <div class="col-lg-6 col-sm-8">
             <h3>Functionality</h3>
-            <p><a href="https://medium.com/@ross.angus/the-tabs-adventure-a9e77188e198" target="_blank">Documentation on how hese tabs work can be found in this article</a>.</p>
+            <p><a href="https://medium.com/@ross.angus/the-tabs-adventure-a9e77188e198" target="_blank">Documentation on how these tabs work can be found in this article</a>.</p>
             <p>The functional CSS relies on specific markup patterns:</p>
             <ul>
-              <li>The checkboxes must have an ID of <code>tab1</code> up to <code>tab2</code></li>
+              <li>The checkboxes must have an ID of <code>tab1</code> up to <code>tab10</code></li>
               <li>The tab panels must have a <code>role="tabpanel"</code> attribute</li>
               <li><code>ID</code>s such as <code>click-tab<em>x</em></code> should be replicated as-is</li>
               <li>The label tags should have a <code>for</code> attribute which connects them to the correct radio button</li>
