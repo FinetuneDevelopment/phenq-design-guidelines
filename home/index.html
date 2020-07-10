@@ -39,64 +39,14 @@
   <main>
     <div class="bg-home gutter-medium">
       <div class="container">
-        <div class="media pt-small pos-rel d-print-none">
-          <div class="media-body"></div>
-          <form method="post">
-            <p class="form-compact flush">
-              <span class="media">
-                <select id="aelia_cs_currencies" class="media-body input-sm" name="aelia_cs_currency">
-                  <option value="GBP" selected>GBP</option>
-                  <option value="AUD">AUD</option>
-                  <option value="CAD">CAD</option>
-                  <option value="CHF">CHF</option>
-                  <option value="EUR">EUR</option>
-                  <option value="MXN">MXN</option>
-                  <option value="USD">USD</option>
-                </select>
-                <button title="Change Currency" aria-label="Change Currency" class="icon-x-small btn btn-clear kb-focus" data-js="hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                    <path d="M50.003-.148l-8.855 8.84L76.1 43.775H0v12.286h76.1l-34.942 35.09L50.003 100l50.078-50.078z" fill="#273583"></path>
-                  </svg>
-                </button>
-                <label for="aelia_cs_currencies" class="sr-only">Please select your preferred currency</label>
-              </span>
-            </p>
-          </form>
-          <nav aria-label="Country selector" class="country-selector">
-            <div class="tooltip tooltip-left" data-js="tooltip">
-              <input type="checkbox" name="country-selector" id="country-selector" class="sr-only">
-              <label for="country-selector" class="country-selector__label">
-                <span class="fflag ff-md fflag-GB"></span>
-                <span class="sr-only">United Kingdom</span>
-              </label>
-              <div class="details details-wide details-block small shadow-light radius-medium text-left">
-                <div class="row list-flat">
-                  <p class="col-6"><a href="https://phenq.fr" lang="fr-FR"><span class="fflag ff-md fflag-FR"></span> &nbsp; Français</a></p>
-                  <p class="col-6"><a href="https://phenq.de" lang="de-DE"><span class="fflag ff-md fflag-DE"></span> &nbsp; Deutsch</a></p>
-                  <p class="col-6"><a href="https://phenq.com.au" lang="en-AU"><span class="fflag ff-md fflag-AU"></span> &nbsp; English (AU)</a></p>
-                  <p class="col-6"><a href="https://phenq.ca" lang="en-CA"><span class="fflag ff-md fflag-CA"></span> &nbsp; English (CA)</a></p>
-                  <p class="col-6"><a href="https://phenq.dk" lang="da-DK"><span class="fflag ff-md fflag-DK"></span> &nbsp; Dansk</a></p>
-                  <p class="col-6"><a href="https://phenq.nl" lang="nl-NL"><span class="fflag ff-md fflag-NL"></span> &nbsp; Nederlands</a></p>
-                  <p class="col-6"><a href="https://phenq.gr" lang="el-GR"><span class="fflag ff-md fflag-GR"></span> &nbsp; Ελληνικα</a></p>
-                  <p class="col-6"><a href="https://phenq.it" lang="it-IT"><span class="fflag ff-md fflag-IT"></span> &nbsp; Italiano</a></p>
-                  <p class="col-6"><a href="https://phenq.pt" lang="pt-BR"><span class="fflag ff-md fflag-PT"></span> &nbsp; Português</a></p>
-                  <p class="col-6"><a href="https://phenq.es" lang="es-ES"><span class="fflag ff-md fflag-ES"></span> &nbsp; Español</a></p>
-                  <p class="col-6"><a href="https://phenq.se" lang="sv-SE"><span class="fflag ff-md fflag-SE"></span> &nbsp; Svenska</a></p>
-                  <p class="col-6"><a href="https://phenq.com" lang="en-US"><span class="fflag ff-md fflag-US"></span> &nbsp; English (US)</a></p>
-                  <p class="col-6"><a href="https://phenq.pl" lang="pl-PL"><span class="fflag ff-md fflag-PL"></span> &nbsp; Polski</a></p>
-                  <p class="col-6"><a href="https://phenq.mx" lang="es-MX"><span class="fflag ff-md fflag-MX"></span> &nbsp; Español (MX)</a></p>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>
-        <div class="media logo-nav">
+        <form class="media logo-nav" method="post" action="#">
           <input type="checkbox" name="nav-toggle" id="nav-toggle" class="sr-only" aria-controls="logo-nav__nav">
           <p class="mr-3">
             <!--@@include('../includes/logo-phenq.svg')-->
             <img src="/phenq-design-guidelines/img/include/logo-phenq.svg" alt="PhenQ" class="logo">
           </p>
           <p class="media-body d-md-none d-lg-none d-xl-none text-right logo-nav__toggle">
+            <a href="#order-now" class="btn btn-primary btn-sm d-inline-block d-md-none mr-3">Order now</a>
             <label for="nav-toggle" aria-label="Toggle menu open and closed" title="Toggle menu open and closed">
               <span class="logo-nav__text text-uppercase type-source-semibold small text-breath">Menu</span>
               <span class="shape sh-burger"></span>
@@ -110,16 +60,62 @@
               <li><a href="#ingredients" class="btn btn-nav" itemprop="name">Ingredients</a></li>
               <li><a href="/phenq-design-guidelines/contact-us/" class="btn btn-nav" itemprop="name">Contact us</a></li>
               <li class="toolbar">
-                <a href="#order-now" class="btn btn-primary btn-sm" itemprop="name">Order now</a>
+                <a href="#order-now" class="btn btn-primary btn-sm d-none d-md-inline-block flush" itemprop="name">Order now</a>
                 <!-- Phase 2
                 <a href="/phenq-design-guidelines/cart/" class="btn btn-config" itemprop="name">Cart <strong>2</strong></a>
                 <a href="/phenq-design-guidelines/profile/" class="btn btn-config" itemprop="name"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                     <path d="M57.8 60.083H42.2C21.653 60.1 4.994 73 4.97 87.015v8.387C4.97 97.1 6.986 100 9.473 100h81.055c2.487 0 4.503-2.902 4.503-4.598v-8.387C95.006 73 78.347 60.083 57.8 60.083zM86.024 92.33h-72.05v-5.315c0-10.638 12.64-19.26 28.234-19.26H57.8c15.593 0 28.234 8.624 28.234 19.26zM50 54.36a27.018 27.018 0 1 0-27.018-27.018A27.018 27.018 0 0 0 50 54.359zm0-45.03a18.012 18.012 0 1 1-18.012 18.012A18.012 18.012 0 0 1 50 9.328z" />
                   </svg></a>-->
               </li>
+              <li class="form-compact form-compact-nobrd">
+                <span class="media">
+                  <select id="aelia_cs_currencies" class="media-body input-sm" name="aelia_cs_currency">
+                    <option value="GBP" selected>GBP</option>
+                    <option value="AUD">AUD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="CHF">CHF</option>
+                    <option value="EUR">EUR</option>
+                    <option value="MXN">MXN</option>
+                    <option value="USD">USD</option>
+                  </select>
+                  <button title="Change Currency" aria-label="Change Currency" class="icon-x-small btn btn-clear kb-focus" data-js="hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                      <path d="M50.003-.148l-8.855 8.84L76.1 43.775H0v12.286h76.1l-34.942 35.09L50.003 100l50.078-50.078z" fill="#273583"></path>
+                    </svg>
+                  </button>
+                  <label for="aelia_cs_currencies" class="sr-only">Please select your preferred currency</label>
+                </span>
+              </li>
+              <li class="pos-rel">
+                <div class="country-selector tooltip tooltip-left" data-js="tooltip">
+                  <input type="checkbox" name="country-selector" id="country-selector" class="sr-only">
+                  <label for="country-selector" class="country-selector__label">
+                    <span class="fflag ff-md fflag-GB"></span>
+                    <span class="sr-only">United Kingdom</span>
+                  </label>
+                  <div class="details details-wide details-block small shadow-light radius-medium text-left">
+                    <div class="row list-flat">
+                      <p class="col-6"><a href="https://phenq.fr" lang="fr-FR"><span class="fflag ff-md fflag-FR"></span> &nbsp; Français</a></p>
+                      <p class="col-6"><a href="https://phenq.de" lang="de-DE"><span class="fflag ff-md fflag-DE"></span> &nbsp; Deutsch</a></p>
+                      <p class="col-6"><a href="https://phenq.com.au" lang="en-AU"><span class="fflag ff-md fflag-AU"></span> &nbsp; English (AU)</a></p>
+                      <p class="col-6"><a href="https://phenq.ca" lang="en-CA"><span class="fflag ff-md fflag-CA"></span> &nbsp; English (CA)</a></p>
+                      <p class="col-6"><a href="https://phenq.dk" lang="da-DK"><span class="fflag ff-md fflag-DK"></span> &nbsp; Dansk</a></p>
+                      <p class="col-6"><a href="https://phenq.nl" lang="nl-NL"><span class="fflag ff-md fflag-NL"></span> &nbsp; Nederlands</a></p>
+                      <p class="col-6"><a href="https://phenq.gr" lang="el-GR"><span class="fflag ff-md fflag-GR"></span> &nbsp; Ελληνικα</a></p>
+                      <p class="col-6"><a href="https://phenq.it" lang="it-IT"><span class="fflag ff-md fflag-IT"></span> &nbsp; Italiano</a></p>
+                      <p class="col-6"><a href="https://phenq.pt" lang="pt-BR"><span class="fflag ff-md fflag-PT"></span> &nbsp; Português</a></p>
+                      <p class="col-6"><a href="https://phenq.es" lang="es-ES"><span class="fflag ff-md fflag-ES"></span> &nbsp; Español</a></p>
+                      <p class="col-6"><a href="https://phenq.se" lang="sv-SE"><span class="fflag ff-md fflag-SE"></span> &nbsp; Svenska</a></p>
+                      <p class="col-6"><a href="https://phenq.com" lang="en-US"><span class="fflag ff-md fflag-US"></span> &nbsp; English (US)</a></p>
+                      <p class="col-6"><a href="https://phenq.pl" lang="pl-PL"><span class="fflag ff-md fflag-PL"></span> &nbsp; Polski</a></p>
+                      <p class="col-6"><a href="https://phenq.mx" lang="es-MX"><span class="fflag ff-md fflag-MX"></span> &nbsp; Español (MX)</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ul>
           </nav>
-        </div>
+        </form>
         <!-- Heading and intro copy -->
         <header class="gutter-large bghome__header" aria-label="Burn Stored Fat, Reveal Your Dream Body" id="main">
           <div class="row">
@@ -766,7 +762,7 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq1" class="sr-only">
-              <label for="faq1" class="row h5" data-js="label-toggle">
+              <label for="faq1" class="row h5 v-pad-small" data-js="label-toggle">
                 <span class="col-10" itemprop="text">Will PhenQ work for me?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
@@ -781,7 +777,7 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq2" class="sr-only">
-              <label for="faq2" class="row h5" data-js="label-toggle">
+              <label for="faq2" class="row h5 v-pad-small" data-js="label-toggle">
                 <span class="col-10" itemprop="text">How long will one bottle last me?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
@@ -796,7 +792,7 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq3" class="sr-only">
-              <label for="faq3" class="row h5" data-js="label-toggle">
+              <label for="faq3" class="row h5 v-pad-small" data-js="label-toggle">
                 <span class="col-10" itemprop="text">How much should I order to get the best results?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
@@ -812,7 +808,7 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq4" class="sr-only">
-              <label for="faq4" class="row h5" data-js="label-toggle">
+              <label for="faq4" class="row h5 v-pad-small" data-js="label-toggle">
                 <span class="col-10" itemprop="text">How long can I take PhenQ for?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
@@ -827,7 +823,7 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq5" class="sr-only">
-              <label for="faq5" class="row h5" data-js="label-toggle">
+              <label for="faq5" class="row h5 v-pad-small" data-js="label-toggle">
                 <span class="col-10" itemprop="text">What's in PhenQ?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
@@ -843,7 +839,7 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq6" class="sr-only">
-              <label for="faq6" class="row h5" data-js="label-toggle">
+              <label for="faq6" class="row h5 v-pad-small" data-js="label-toggle">
                 <span class="col-10" itemprop="text">How do I take PhenQ?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
@@ -858,7 +854,7 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq7" class="sr-only">
-              <label for="faq7" class="row h5" data-js="label-toggle">
+              <label for="faq7" class="row h5 v-pad-small" data-js="label-toggle">
                 <span class="col-10" itemprop="text">Is PhenQ suitable for both men and women?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
@@ -873,7 +869,7 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq8" class="sr-only">
-              <label for="faq8" class="row h5" data-js="label-toggle">
+              <label for="faq8" class="row h5 v-pad-small" data-js="label-toggle">
                 <span class="col-10" itemprop="text">Can PhenQ be taken by vegetarians and vegans?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
@@ -888,7 +884,7 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq9" class="sr-only">
-              <label for="faq9" class="row h5" data-js="label-toggle">
+              <label for="faq9" class="row h5 v-pad-small" data-js="label-toggle">
                 <span class="col-10" itemprop="text">Who should not take PhenQ?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
@@ -903,7 +899,7 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq10" class="sr-only">
-              <label for="faq10" class="row h5" data-js="label-toggle">
+              <label for="faq10" class="row h5 v-pad-small" data-js="label-toggle">
                 <span class="col-10" itemprop="text">Does PhenQ have any side effects?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
@@ -918,7 +914,7 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq11" class="sr-only">
-              <label for="faq11" class="row h5" data-js="label-toggle">
+              <label for="faq11" class="row h5 v-pad-small" data-js="label-toggle">
                 <span class="col-10" itemprop="text">Does PhenQ interact with any medicines?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
@@ -933,7 +929,7 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq12" class="sr-only">
-              <label for="faq12" class="row h5" data-js="label-toggle">
+              <label for="faq12" class="row h5 v-pad-small" data-js="label-toggle">
                 <span class="col-10" itemprop="text">Does PhenQ interfere with oral contraceptives?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
@@ -948,7 +944,7 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq13" class="sr-only">
-              <label for="faq13" class="row h5" data-js="label-toggle">
+              <label for="faq13" class="row h5 v-pad-small" data-js="label-toggle">
                 <span class="col-10" itemprop="text">Where do you ship to?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
@@ -963,7 +959,7 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq14" class="sr-only">
-              <label for="faq14" class="row h5" data-js="label-toggle">
+              <label for="faq14" class="row h5 v-pad-small" data-js="label-toggle">
                 <span class="col-10" itemprop="text">Which payment methods do you offer?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
@@ -998,7 +994,7 @@
 
             <div class="faq" itemscope itemtype="http://schema.org/Question">
               <input type="radio" name="faq" id="faq15" class="sr-only">
-              <label for="faq15" class="row h5" data-js="label-toggle">
+              <label for="faq15" class="row h5 v-pad-small" data-js="label-toggle">
                 <span class="col-10" itemprop="text">How do I contact you?</span>
                 <span class="col-2 text-right">
                   <span class="h4 type-gotham-medium faq__icon">+</span>
