@@ -1,0 +1,10 @@
+<head><link href="css/app.css" rel="stylesheet"></head><?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+  <msapplication>
+    <tile>
+      <square150x150logo src="/phenq-design-guidelines/img/favicon/mstile-150x150.png"/>
+      <TileColor>#ffc40d</TileColor>
+    </tile>
+  </msapplication>
+</browserconfig>
+<script type="text/javascript" src="js/app.js"></script>
