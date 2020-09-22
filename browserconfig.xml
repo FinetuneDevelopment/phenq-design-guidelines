@@ -1,4 +1,4 @@
-<head><link href="css/app.css" rel="stylesheet"></head><?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <browserconfig>
   <msapplication>
     <tile>
@@ -7,4 +7,3 @@
     </tile>
   </msapplication>
 </browserconfig>
-<script type="text/javascript" src="js/app.js"></script>

@@ -1,4 +1,4 @@
-<head><link href="css/app.css" rel="stylesheet"></head>{
+{
   "name": "PhenQ UK",
   "short_name": "PhenQ",
   "icons": [
@@ -16,4 +16,4 @@
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone"
-}<script type="text/javascript" src="js/app.js"></script>
+}
